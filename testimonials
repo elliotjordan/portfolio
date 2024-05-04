@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HMH Work</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="3 Blocks" />
+  <link rel="icon" href="favicon.png">
+  <style>
 
+.image-row {
+    text-align: center; 
+    display: table;
+}
+.image-box {
+    width: 26%;
+    padding: 1%;
+    margin: .5%;
+    background: grey;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0; /* fixes bottom padding */
+}
+.image-box img {
+    max-width: 100%;
+}
+  </style>
+</head>
+<body>
+  <h1 style="font-family: Arial; text-align: center;">Here are some testimonials from co-workers who I've worked with!</h1>
+  <p style="text-align: center; padding: 0 60px 0 60px">I work with lots of colleagues from all levels of the organization. Its important to be productive, dependable, and trustworthy.</p>
+
+	<br>
+	
+<div class="image-row">
+    
+    <div class="image-box">
+        <a href="" target="_blank"><img src="EQUITY-screenshot.jpg" /></a>
+    </div>
+	
+    <div class="image-box">
+        <a href="" target="_blank"><img src="ATLANTIC-screenshot.jpg" /></a>
+    </div>
+	
+    <div class="image-box">
+        <a href="" target="_blank"><img src="LTindex-screenshot.JPG" /></a>
+    </div>
+    
+</div>
+
+	
+
+<br>
+		</body>
+		</html>
