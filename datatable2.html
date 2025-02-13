@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed; /* Important for responsiveness */
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            overflow: hidden; /* Prevents content from overflowing */
+            white-space: nowrap; /* Prevents text from wrapping */
+            text-overflow: ellipsis; /* Adds ellipsis (...) for overflow */
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 600px) {
+            table {
+                display: block; /* Makes table scrollable horizontally */
+                overflow-x: auto;
+            }
+
+            th, td {
+                white-space: nowrap; /* Prevents text from wrapping */
+                font-size: smaller; /* Smaller font on smaller screens */
+
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">INDOOR AIR EDB</th>
+                <th colspan="2">OUTDOOR COIL ENTERING AIR TEMP</th>
+                <th colspan="2">0°F (-17.8°C)</th>
+                <th colspan="2">10°F (-12.2°C)</th>
+                <th colspan="2">20°F (-6.7°C)</th>
+                <th colspan="2">30°F (-1.1°C)</th>
+                <th colspan="2">40°F (4.4°C)</th>
+                <th colspan="2">50°F (8.3°C)</th>
+                <th colspan="2">60°F (15.6°C)</th>
+            </tr>
+            <tr>
+                <th>CFM</th>
+                <th>Capacity (Mbtuh)</th>
+                <th>Total Sys kW</th>
+                <th>Capacity (Mbtuh)</th>
+                <th>Total Sys kW</th>
+                <th>Capacity (Mbtuh)</th>
+                <th>Total Sys kW</th>
+                <th>Capacity (Mbtuh)</th>
+                <th>Total Sys kW</th>
+                <th>Capacity (Mbtuh)</th>
+                <th>Total Sys kW</th>
+                <th>Capacity (Mbtuh)</th>
+                <th>Total Sys kW</th>
+                 <th>Capacity (Mbtuh)</th>
+                <th>Total Sys kW</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>65°F (18.3°C)</td>
+                <td>1200</td>
+                <td>13.7</td>
+                <td>13.7</td>
+                <td>13.7</td>
+                <td>18.8</td>
+                <td>16.8</td>
+                <td>2.8</td>
+                <td>23.1</td>
+                <td>20.9</td>
+                <td>2.98</td>
+                <td>26.6</td>
+                <td>23.3</td>
+                <td>3.01</td>
+                <td>33.7</td>
+                <td>33.7</td>
+                <td>33.7</td>
+                <td>33.7</td>
+                <td>33.7</td>
+                <td>33.7</td>
+                <td>46.6</td>
+                <td>46.6</td>
+                <td>3.72</td>
+            </tr>
+            <tr>
+                <td>65°F (18.3°C)</td>
+                <td>1400</td>
+                <td>13.9</td>
+                <td>13.9</td>
+                <td>13.9</td>
+                <td>19</td>
+                <td>16.8</td>
+                <td>2.55</td>
+                <td>23.1</td>
+                <td>21.1</td>
+                <td>2.7</td>
+                <td>26.6</td>
+                <td>23.6</td>
+                <td>2.73</td>
+                <td>34</td>
+                <td>34</td>
+                <td>2.86</td>
+                <td>41.2</td>
+                <td>41.2</td>
+                <td>3.09</td>
+                <td>47.1</td>
+                <td>47.1</td>
+                <td>3.32</td>
+            </tr>
+            <tr>
+                <td>65°F (18.3°C)</td>
+                <td>1550</td>
+                <td>14</td>
+                <td>12.9</td>
+                <td>2.49</td>
+                <td>19.2</td>
+                <td>16.8</td>
+                <td>2.58</td>
+                <td>23.1</td>
+                <td>21.3</td>
+                <td>2.72</td>
+                <td>26.6</td>
+                <td>23.7</td>
+                <td>2.75</td>
+                <td>34.2</td>
+                <td>34.2</td>
+                <td>2.87</td>
+                <td>41.6</td>
+                <td>41.6</td>
+                <td>3.09</td>
+                <td>47.3</td>
+                <td>3.31</td>
+            </tr>
+             <tr>
+                <td>70°F (21.1°C)</td>
+                <td>1200</td>
+                <td>13.3</td>
+                <td>12.3</td>
+                <td>2.82</td>
+                <td>18.3</td>
+                <td>16.8</td>
+                <td>2.93</td>
+                <td>23.1</td>
+                <td>20.4</td>
+                <td>3.11</td>
+                <td>26.6</td>
+                <td>22.7</td>
+                <td>3.15</td>
+                <td>32.8</td>
+                <td>32.8</td>
+                <td>3.31</td>
+                <td>39.7</td>
+                <td>39.7</td>
+                <td>3.59</td>
+                <td>45.4</td>
+                <td>45.4</td>
+                <td>3.89</td>
+            </tr>
+            <tr>
+                <td>70°F (21.1°C)</td>
+                <td>1400</td>
+                <td>13.5</td>
+                <td>12.4</td>
+                <td>2.56</td>
+                <td>18.5</td>
+                <td>16.8</td>
+                <td>2.66</td>
+                <td>23.1</td>
+                <td>20.9</td>
+                <td>2.81</td>
+                <td>26.6</td>
+                <td>23.7</td>
+                <td>2.84</td>
+                <td>33.1</td>
+                <td>33.1</td>
+                <td>2.98</td>
+                <td>40.1</td>
+                <td>40.1</td>
+                <td>3.21</td>
+                <td>45.9</td>
+                <td>45.9</td>
+                <td>3.46</td>
+            </tr>
+            <tr>
+                <td>70°F (21.1°C)</td>
+                <td>1550</td>
+                <td>13.7</td>
+                <td>12.6</td>
+                <td>2.59</td>
+                <td>18.7</td>
+                <td>16.8</td>
+                <td>2.68</td>
+                <td>23.1</td>
+                <td>20.7</td>
+                <td>2.83</td>
+                <td>26.6</td>
+                <td>23.1</td>
+                <td>2.86</td>
+                <td>33.3</td>
+                <td>3.44</td>
+                <td>3.44</td>
+                <td>3.44</td>
+                <td>3.44</td>
+                <td>3.44</td>
+                <td>3.44</td>
+                <td>3.44</td>
+                <td>3.44</td>
+            </tr>
+            <tr>
+                <td>75°F (23.9°C)</td>
+                <td>1200</td>
+                <td>13.1</td>
+                <td>12</td>
+                <td>2.94</td>
+                <td>17.9</td>
+                <td>16.8</td>
+                <td>3.05</td>
+                <td>23.1</td>
+                <td>19.9</td>
+                <td>3.25</td>
+                <td>26.6</td>
+                <td>22.5</td>
+                <td>3.29</td>
+                <td>32.5</td>
+                <td>32.5</td>
+                <td>3.46</td>
+                <td>39.3</td>
+                <td>39.3</td>
+                <td>3.75</td>
+                <td>44.9</td>
+                <td>44.9</td>
+                <td>4.06</td>
+            </tr>
+            <tr>
+                <td>75°F (23.9°C)</td>
